@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b8d2475a757b4a73964b1f3d4b65fc42" Name="Diagram1" ZoomLevel="87">
+        <EntityTypeShape EntityType="HotelDBModel.Child_Guest" Width="1.5" PointX="2.125" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelDBModel.HotelFurniture" Width="1.5" PointX="10.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelDBModel.HotelInfo" Width="1.5" PointX="4.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelDBModel.HotelWorker" Width="1.5" PointX="7.375" PointY="0.625" IsExpanded="true" />
+        <AssociationConnector Association="HotelDBModel.FK_HotelInfo_HotelWorkers" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelDBModel.FK_HotelWorkers_Hotel" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HotelDBModel.RoomType" Width="1.75" PointX="7.875" PointY="5.125" />
+        <EntityTypeShape EntityType="HotelDBModel.Guest" Width="1.5" PointX="2.375" PointY="0.875" />
+        <AssociationConnector Association="HotelDBModel.FK_Child_Guest_ToGuests" />
+        <AssociationConnector Association="HotelDBModel.FK_Guests_HotelInfo" />
+        <EntityTypeShape EntityType="HotelDBModel.HotelNumber" Width="1.5" PointX="10.375" PointY="4" />
+        <AssociationConnector Association="HotelDBModel.FK_HotelNumber_Guests" />
+        <AssociationConnector Association="HotelDBModel.FK_HotelNumber_HotelInfo" />
+        <AssociationConnector Association="HotelDBModel.FK_HotelNumber_RoomType" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
